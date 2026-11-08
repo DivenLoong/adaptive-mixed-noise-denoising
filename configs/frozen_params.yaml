@@ -1,0 +1,325 @@
+created_utc: '2026-11-08T07:21:33.145272+00:00'
+protocol_sha256: 8f0304bf485311d025c2824d896c0004f75b8ac72d7f2b888f29d9e9454fec94
+selection: development macro PSNR, tie SSIM, then candidate order
+development_images:
+- camera
+- coffee
+development_seed: 17
+selected:
+  gaussian: &id001
+    sigma: 1.0
+  median: &id002
+    window: 3
+  bilateral: &id003
+    sigma_color: 0.2
+    sigma_space: 3.0
+  wavelet: &id004
+    wavelet: db2
+    method: VisuShrink
+  nlm: &id005
+    h: 0.16
+  adaptive: &id006
+    window: 5
+    threshold: 0.4
+    k: 1.0
+candidate_summaries:
+- method: gaussian
+  candidate: 0
+  params:
+    sigma: 0.5
+  psnr: 21.17698088827719
+  ssim: 0.4024757825117859
+- method: gaussian
+  candidate: 1
+  params: *id001
+  psnr: 24.43754330312166
+  ssim: 0.5692023490754561
+- method: gaussian
+  candidate: 2
+  params:
+    sigma: 1.5
+  psnr: 24.07898789849469
+  ssim: 0.6193712363548138
+- method: gaussian
+  candidate: 3
+  params:
+    sigma: 2.0
+  psnr: 23.360099701408025
+  ssim: 0.6304222673671335
+- method: median
+  candidate: 0
+  params: *id002
+  psnr: 26.664738527112945
+  ssim: 0.6605838948130629
+- method: median
+  candidate: 1
+  params:
+    window: 5
+  psnr: 25.54072920098159
+  ssim: 0.6797395459834866
+- method: bilateral
+  candidate: 0
+  params:
+    sigma_color: 0.05
+    sigma_space: 1.0
+  psnr: 18.09906305457434
+  ssim: 0.32193010588407933
+- method: bilateral
+  candidate: 1
+  params:
+    sigma_color: 0.05
+    sigma_space: 3.0
+  psnr: 18.288055636698026
+  ssim: 0.32923135869265263
+- method: bilateral
+  candidate: 2
+  params:
+    sigma_color: 0.1
+    sigma_space: 1.0
+  psnr: 18.742456591749995
+  ssim: 0.3479768145082703
+- method: bilateral
+  candidate: 3
+  params:
+    sigma_color: 0.1
+    sigma_space: 3.0
+  psnr: 19.04871749842132
+  ssim: 0.3601301728305097
+- method: bilateral
+  candidate: 4
+  params:
+    sigma_color: 0.2
+    sigma_space: 1.0
+  psnr: 19.66732588582841
+  ssim: 0.385315231306051
+- method: bilateral
+  candidate: 5
+  params: *id003
+  psnr: 20.02693924349458
+  ssim: 0.4040609513027073
+- method: wavelet
+  candidate: 0
+  params:
+    wavelet: haar
+    method: BayesShrink
+  psnr: 21.038393341623795
+  ssim: 0.4439869554172925
+- method: wavelet
+  candidate: 1
+  params:
+    wavelet: haar
+    method: VisuShrink
+  psnr: 20.78675601723125
+  ssim: 0.4772745090641236
+- method: wavelet
+  candidate: 2
+  params:
+    wavelet: db2
+    method: BayesShrink
+  psnr: 21.745438662615022
+  ssim: 0.4638938937241677
+- method: wavelet
+  candidate: 3
+  params: *id004
+  psnr: 22.869225887667252
+  ssim: 0.5431638778426925
+- method: nlm
+  candidate: 0
+  params:
+    h: 0.02
+  psnr: 17.965322225546473
+  ssim: 0.3216020162136684
+- method: nlm
+  candidate: 1
+  params:
+    h: 0.04
+  psnr: 18.629098573390085
+  ssim: 0.3492239409271454
+- method: nlm
+  candidate: 2
+  params:
+    h: 0.06
+  psnr: 19.41214997402657
+  ssim: 0.39320131765161503
+- method: nlm
+  candidate: 3
+  params:
+    h: 0.08
+  psnr: 20.18019150404671
+  ssim: 0.4263395144436748
+- method: nlm
+  candidate: 4
+  params:
+    h: 0.1
+  psnr: 21.61952656482617
+  ssim: 0.4801595609336452
+- method: nlm
+  candidate: 5
+  params:
+    h: 0.12
+  psnr: 22.95062085986714
+  ssim: 0.5320517474182225
+- method: nlm
+  candidate: 6
+  params: *id005
+  psnr: 24.3665187295351
+  ssim: 0.5960615076110471
+- method: nlm
+  candidate: 7
+  params:
+    h: 0.2
+  psnr: 24.336447055245895
+  ssim: 0.6206164735082693
+- method: nlm
+  candidate: 8
+  params:
+    h: 0.25
+  psnr: 23.706490517610444
+  ssim: 0.6236793514248236
+- method: adaptive
+  candidate: 0
+  params:
+    window: 3
+    threshold: 0.4
+    k: 0.6
+  psnr: 26.086610714563104
+  ssim: 0.6968638837441526
+- method: adaptive
+  candidate: 1
+  params:
+    window: 3
+    threshold: 0.4
+    k: 0.8
+  psnr: 27.76202781014354
+  ssim: 0.7764760104432433
+- method: adaptive
+  candidate: 2
+  params:
+    window: 3
+    threshold: 0.4
+    k: 1.0
+  psnr: 28.10889051116714
+  ssim: 0.7934124752734186
+- method: adaptive
+  candidate: 3
+  params:
+    window: 3
+    threshold: 0.6
+    k: 0.6
+  psnr: 25.73975167594555
+  ssim: 0.6887290606307755
+- method: adaptive
+  candidate: 4
+  params:
+    window: 3
+    threshold: 0.6
+    k: 0.8
+  psnr: 27.410784986462378
+  ssim: 0.767570754326054
+- method: adaptive
+  candidate: 5
+  params:
+    window: 3
+    threshold: 0.6
+    k: 1.0
+  psnr: 27.782565593231784
+  ssim: 0.7858298502593847
+- method: adaptive
+  candidate: 6
+  params:
+    window: 3
+    threshold: 0.8
+    k: 0.6
+  psnr: 23.52987715278191
+  ssim: 0.6039447972336234
+- method: adaptive
+  candidate: 7
+  params:
+    window: 3
+    threshold: 0.8
+    k: 0.8
+  psnr: 25.130543480180446
+  ssim: 0.6771435923428416
+- method: adaptive
+  candidate: 8
+  params:
+    window: 3
+    threshold: 0.8
+    k: 1.0
+  psnr: 25.571192606955464
+  ssim: 0.6978238101522033
+- method: adaptive
+  candidate: 9
+  params:
+    window: 5
+    threshold: 0.4
+    k: 0.6
+  psnr: 26.510262344323046
+  ssim: 0.7160429969170033
+- method: adaptive
+  candidate: 10
+  params:
+    window: 5
+    threshold: 0.4
+    k: 0.8
+  psnr: 28.177971824398323
+  ssim: 0.7976259455135768
+- method: adaptive
+  candidate: 11
+  params: *id006
+  psnr: 28.38268508118302
+  ssim: 0.8087366411385452
+- method: adaptive
+  candidate: 12
+  params:
+    window: 5
+    threshold: 0.6
+    k: 0.6
+  psnr: 26.030080294140106
+  ssim: 0.7049077698575505
+- method: adaptive
+  candidate: 13
+  params:
+    window: 5
+    threshold: 0.6
+    k: 0.8
+  psnr: 27.67863906773049
+  ssim: 0.7857828785106431
+- method: adaptive
+  candidate: 14
+  params:
+    window: 5
+    threshold: 0.6
+    k: 1.0
+  psnr: 27.937697641865324
+  ssim: 0.7991957475217306
+- method: adaptive
+  candidate: 15
+  params:
+    window: 5
+    threshold: 0.8
+    k: 0.6
+  psnr: 24.167929731408123
+  ssim: 0.6293323630517644
+- method: adaptive
+  candidate: 16
+  params:
+    window: 5
+    threshold: 0.8
+    k: 0.8
+  psnr: 25.780734226160156
+  ssim: 0.7029445104638725
+- method: adaptive
+  candidate: 17
+  params:
+    window: 5
+    threshold: 0.8
+    k: 1.0
+  psnr: 26.164122882070284
+  ssim: 0.7200354614754735
+nlm:
+  patch_size: 5
+  patch_distance: 6
+  fast_mode: true
+  sigma: 0.0
+  preserve_range: true

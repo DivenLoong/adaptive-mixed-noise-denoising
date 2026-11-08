@@ -1,0 +1,33 @@
+version: 1
+image_max_side: 256
+development_images: [camera, coffee]
+test_images: [astronaut, chelsea, coins, moon, page, text]
+development_seed: 17
+test_seeds: [42, 2026, 1108]
+primary_selection_metric: macro_mean_psnr
+tie_breaker: macro_mean_ssim
+noise_order: gaussian_clip_then_pixelwise_salt_pepper
+noise_mask_label: selected_for_impulse_overwrite_even_if_value_unchanged
+nlm:
+  patch_size: 5
+  patch_distance: 6
+  fast_mode: true
+  sigma: 0.0
+  preserve_range: true
+adaptive_grid:
+  window: [3, 5]
+  threshold: [0.4, 0.6, 0.8]
+  k: [0.6, 0.8, 1.0]
+baseline_grids:
+  gaussian:
+    sigma: [0.5, 1.0, 1.5, 2.0]
+  median:
+    window: [3, 5]
+  bilateral:
+    sigma_color: [0.05, 0.1, 0.2]
+    sigma_space: [1.0, 3.0]
+  wavelet:
+    wavelet: [haar, db2]
+    method: [BayesShrink, VisuShrink]
+  nlm:
+    h: [0.02, 0.04, 0.06, 0.08, 0.10, 0.12, 0.16, 0.20, 0.25]

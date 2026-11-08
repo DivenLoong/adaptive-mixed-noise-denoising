@@ -1,0 +1,128 @@
+[
+  {
+    "name": "camera",
+    "split": "dev",
+    "original_shape": [
+      512,
+      512
+    ],
+    "processed_shape": [
+      256,
+      256
+    ],
+    "sha256": "4384e509741a12673bc4d8ccd38015e23d49cc4897f9add8ecf13f73ae1a5d51",
+    "interpolation": "bilinear order=1 anti_aliasing=True mode=reflect",
+    "source": "https://scikit-image.org/docs/stable/api/skimage.data.html#skimage.data.camera"
+  },
+  {
+    "name": "coffee",
+    "split": "dev",
+    "original_shape": [
+      400,
+      600,
+      3
+    ],
+    "processed_shape": [
+      171,
+      256,
+      3
+    ],
+    "sha256": "0c38172f14dc10eebc9273c3d720e6ef45580ef30eac04e2ca897c3509d5f7a8",
+    "interpolation": "bilinear order=1 anti_aliasing=True mode=reflect",
+    "source": "https://scikit-image.org/docs/stable/api/skimage.data.html#skimage.data.coffee"
+  },
+  {
+    "name": "astronaut",
+    "split": "test",
+    "original_shape": [
+      512,
+      512,
+      3
+    ],
+    "processed_shape": [
+      256,
+      256,
+      3
+    ],
+    "sha256": "67a8e6031f0fd05f669eb49d9ca63aceeb5a4a8786d335e9ca9615f58c10b44e",
+    "interpolation": "bilinear order=1 anti_aliasing=True mode=reflect",
+    "source": "https://scikit-image.org/docs/stable/api/skimage.data.html#skimage.data.astronaut"
+  },
+  {
+    "name": "chelsea",
+    "split": "test",
+    "original_shape": [
+      300,
+      451,
+      3
+    ],
+    "processed_shape": [
+      170,
+      256,
+      3
+    ],
+    "sha256": "2f6babb7a2bb5fd28f91699f1894243745502a1b7b61a4e120324c84b2478204",
+    "interpolation": "bilinear order=1 anti_aliasing=True mode=reflect",
+    "source": "https://scikit-image.org/docs/stable/api/skimage.data.html#skimage.data.chelsea"
+  },
+  {
+    "name": "coins",
+    "split": "test",
+    "original_shape": [
+      303,
+      384
+    ],
+    "processed_shape": [
+      202,
+      256
+    ],
+    "sha256": "0f0258de276ed324f712a0da955516d370bd5e5e036bc27e83f18c1d942e4a6c",
+    "interpolation": "bilinear order=1 anti_aliasing=True mode=reflect",
+    "source": "https://scikit-image.org/docs/stable/api/skimage.data.html#skimage.data.coins"
+  },
+  {
+    "name": "moon",
+    "split": "test",
+    "original_shape": [
+      512,
+      512
+    ],
+    "processed_shape": [
+      256,
+      256
+    ],
+    "sha256": "3df4062091b0bd1bb18ad945b74f81509e56c9d9d2cfca6a7df21f58dcf5d7df",
+    "interpolation": "bilinear order=1 anti_aliasing=True mode=reflect",
+    "source": "https://scikit-image.org/docs/stable/api/skimage.data.html#skimage.data.moon"
+  },
+  {
+    "name": "page",
+    "split": "test",
+    "original_shape": [
+      191,
+      384
+    ],
+    "processed_shape": [
+      127,
+      256
+    ],
+    "sha256": "41aba081161d3b6f65661d0cdf2832140c67e717a4f43b74207d7788f38f803e",
+    "interpolation": "bilinear order=1 anti_aliasing=True mode=reflect",
+    "source": "https://scikit-image.org/docs/stable/api/skimage.data.html#skimage.data.page"
+  },
+  {
+    "name": "text",
+    "split": "test",
+    "original_shape": [
+      172,
+      448
+    ],
+    "processed_shape": [
+      98,
+      256
+    ],
+    "sha256": "e253438531c876ee702f109f0aac4608552dfb160c36af48c05e06a01a37bbb9",
+    "interpolation": "bilinear order=1 anti_aliasing=True mode=reflect",
+    "source": "https://scikit-image.org/docs/stable/api/skimage.data.html#skimage.data.text"
+  }
+]

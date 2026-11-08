@@ -1,0 +1,4 @@
+* text=auto eol=lf
+*.bat text eol=crlf
+# Byte-hashed frozen configuration must retain its original CRLF bytes.
+/configs/frozen_params.yaml -text

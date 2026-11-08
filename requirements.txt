@@ -1,0 +1,12 @@
+numpy==2.5.3
+scipy==1.18.1
+scikit-image==0.26.0
+opencv-python>=4.10,<6
+PyWavelets>=1.8,<2
+pandas>=2.2,<4
+matplotlib>=3.10,<4
+Pillow>=11,<14
+PyYAML>=6,<7
+streamlit>=1.50,<2
+pytest>=8,<10
+threadpoolctl>=3,<4

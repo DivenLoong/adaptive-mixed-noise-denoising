@@ -1,0 +1,41 @@
+{
+  "frozen_sha256": "f6d9bad7f13305c5575e21cb83d4e2bf0450e3018b29e3479238ad5139fd8714",
+  "protocol_sha256": "8f0304bf485311d025c2824d896c0004f75b8ac72d7f2b888f29d9e9454fec94",
+  "source_sha256": {
+    "src\\__init__.py": "b53356f175e383c32e46a616d11b02b3db5eb820ed4c917db758d57e6a1dae8d",
+    "src\\adaptive_method.py": "bdc3f21b5273c641f8616b1e499efb2b16373cc922fad45e5de7a1a8d6c6022d",
+    "src\\common.py": "663fc42baa2628fb3931e887a3f8fc8c95c9f1efc34c3cc4b2c056ebbc119047",
+    "src\\denoisers.py": "9873a4506a9271ac90f2cb21255c968a9135456564d41ecd91f05420c9a618aa",
+    "src\\image_io.py": "f1e5795c7eeac1b311f52875ae3bf6fa2de2750ff0be02ea86d4188bff75de3d",
+    "src\\impulse_detection.py": "250b06c2fb1f7ac8056a5c9f72d7d18f5f823a4b2ea152892d9a3f45cb139bd5",
+    "src\\metrics.py": "35b08acff0cb35facf4ca459ac779a95ad1fb340c2aa0b02faf2180f2c50ac18",
+    "src\\noise.py": "d052e9a88bb5f61acb7ec2aa7bbdd23ac6bd5f770ba02131b8b013a6a31f0dcc",
+    "src\\noise_estimation.py": "74e3bdefac168d9d69add517dab29cdad3ba6cffcd5c51f1252a7fe83ed29790"
+  },
+  "test_not_used": true,
+  "selected": {
+    "gaussian": {
+      "sigma": 1.0
+    },
+    "median": {
+      "window": 3
+    },
+    "bilateral": {
+      "sigma_color": 0.2,
+      "sigma_space": 3.0
+    },
+    "wavelet": {
+      "wavelet": "db2",
+      "method": "VisuShrink"
+    },
+    "nlm": {
+      "h": 0.16
+    },
+    "adaptive": {
+      "window": 5,
+      "threshold": 0.4,
+      "k": 1.0
+    }
+  },
+  "created_utc": "2026-11-08T07:21:33.145272+00:00"
+}
